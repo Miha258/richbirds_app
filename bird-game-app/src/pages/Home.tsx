@@ -1,19 +1,17 @@
 import React from 'react';
-import BirdHouse from '../BirdsHouse/BirdHouse';
-// import BirdCage from '../components/BirdCage/BirdCage';
-// import Referral from '../components/Referral/Referral';
-// import Conversion from '../components/Conversion/Conversion';
-// import Deposit from '../components/Deposit/Deposit';
+import BirdHouse from '../BirdsHouse/BirdHouse'
 import styles from './Home.module.css';
+import Nest from '../BirdNest/Nest';
 
 const Home: React.FC = () => {
   return (
-    <div className={styles.home}>
-      <BirdHouse />
-      {/* <BirdCage />
-      <Referral />
-      <Conversion />
-      <Deposit /> */}
+    <div>
+      {/* <div className={styles.home}>
+        <BirdHouse/>
+      </div> */}
+      <div className={styles.nest}>
+        <Nest/>
+      </div>
     </div>
   );
 };

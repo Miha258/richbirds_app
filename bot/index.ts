@@ -5,10 +5,11 @@ const bot = new Telegraf(BOT_TOKEN);
 
 // Start command
 bot.start((ctx) => {
+  console.log(bot.botInfo)
   ctx.reply('Welcome! Click a button', Markup.inlineKeyboard([
     Markup.button.callback('Button 1', 'button1'),
     Markup.button.callback('Button 2', 'button2'),
-    Markup.button.webApp('Open app', 'https://f680-194-44-180-225.ngrok-free.app')
+    Markup.button.webApp('Open app', 'https://4477-176-125-33-224.ngrok-free.app')
   ]));
 });
 

@@ -3,7 +3,19 @@
     width: 100%;
     height: 100%;
     
-    background: url('./background.jpeg') no-repeat center center;
+    background: url('./homeBackground.jpeg') no-repeat center center;
     background-size: cover;
 }
+
+
+.nest {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background: url('./nestBackground.png') no-repeat center center;
+    background-size: cover;
+}
+
+
 

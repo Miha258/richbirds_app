@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Circle';
+    src: url('./Circle.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nestContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.shadow {
+    position: absolute;
+    left: 19.94%;
+    right: 21.28%;
+    top: 51.22%;
+    bottom: 38.66%;
+    opacity: 0.32;
+    width: 66vw;
+    opacity: 0.52;
+    z-index: 0;
+}
+
+.nest {
+    position: absolute;
+    left: 22%;
+    right: 21.3%;
+    top: 45%;
+    bottom: 41.93%;
+    width: 62vw;
+    z-index: 1;
+}
+
+.progress {
+    position: absolute;
+    left: 21.1%;
+    right: 21.3%;
+    top: 64.06%;
+    bottom: 33.3%;
+    width: 65vw;
+    height: 23px;
+}
+
+.claim {
+    position: absolute;
+    left: 21.1%;
+    right: 21.3%;
+    top: 70.53%;
+    bottom: 18.34%;
+    background: #84ACF4;
+    opacity: 0.92;
+    width: 65vw;
+    height: 22vw;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Circle';
+    font-size: 40px;
+    line-height: 81px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.part {
+    position: absolute;
+    left: 5.6%;
+    right: 90.85%;
+    top: 55.01%;
+    bottom: 44.98%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+
+.part1 {
+    position: absolute;
+    left: 2.9%;
+    right: 93.06%;
+    top: 55.19%;
+    bottom: 44.46%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part2 {
+    position: absolute;
+    left: 8.86%;
+    right: 87.55%;
+    top: 55.14%;
+    bottom: 44.85%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part3 {
+    position: absolute;
+    left: 4.63%;
+    right: 91.56%;
+    top: 56%;
+    bottom: 44.32%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part4 {
+    position: absolute;
+    left: 11.23%;
+    right: 85.59%;
+    top: 55.19%;
+    bottom: 44.45%;
+    height: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part5 {
+    position: absolute;
+    left: 10.14%;
+    right: 86.24%;
+    top: 56.49%;
+    bottom: 43.46%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+
+.part6 {
+    position: absolute;
+    left: 6.23%;
+    right: 89.91%;
+    top: 56.47%;
+    bottom: 43.4%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part7 {
+    position: absolute;
+    left: 12.91%;
+    right: 83.27%;
+    top: 56.42%;
+    bottom: 43.44%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part8 {
+    position: absolute;
+    left: 12.56%;
+    right: 83.75%;
+    top: 54.99%;
+    bottom: 44.95%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.part9 {
+    position: absolute;
+    left: 14.77%;
+    right: 81.05%;
+    top: 55.16%;
+    bottom: 44.32%;
+    width: 6px;
+    padding: 3px;
+    z-index: 2;
+}
+
+.eggsNest {
+    position: absolute;
+    left: 2.2%;
+    right: 81.14%;
+    top: 53.62%;
+    bottom: 42.56%;
+    width: 17vw;
+    z-index: 1;
+}
+
+
+.rightEgg {
+    position: absolute;
+    left: 9.98%;
+    right: 80.85%;
+    top: 50.4%;
+    bottom: 44.15%;
+    height: 40px;
+    z-index: 0;
+}
+
+
+.leftEgg {
+    position: absolute;
+    left: 3.1%;
+    right: 86.68%;
+    top: 50.4%;
+    bottom: 44.14%;
+    height: 40px;
+    z-index: 0;
+}
+
+
+.centerEgg {
+    position: absolute;
+    left: 6.9%;
+    right: 83.99%;
+    top: 49.74%;
+    bottom: 44.76%;
+    height: 40px;
+    z-index: 0;
+}
+
+.eggsNestTop {
+    position: absolute;
+    left: 2%;
+    right: 83.99%;
+    top: 52.74%;
+    bottom: 44.76%;
+    height: 40px;
+    z-index: 2;
+    width: 67px;
+    height: 15px;
+}
+
+.eggsNestShadow {
+    position: absolute;
+    left: .15%;
+    right: 79.22%;
+    top: 55.67%;
+    bottom: 41.37%;
+    opacity: 0.52;
+    width: 75px;
+}
+
+eggsCount {
+    position: absolute;
+    width: 98px;
+    height: 60px;
+
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+}
