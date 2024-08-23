@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './MenuBar.module.css';
+import styles from './BalanceBar.module.css';
 import bagIcon from './bag-icon.png';
-import coin from './coin.png'
+import coin from '../assets/coin.png'
 import vector from './vector.png'
 import planet from './planet.png'
 
-const MenuBar: React.FC = () => {
+const BalanceBar: React.FC = () => {
   return (
     <div className={styles.birdHouse}>
       <div className={styles.scoreContainer}>
@@ -19,4 +19,4 @@ const MenuBar: React.FC = () => {
   );
 };
 
-export default MenuBar;
+export default BalanceBar;

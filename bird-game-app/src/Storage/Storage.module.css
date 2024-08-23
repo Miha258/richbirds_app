@@ -1,0 +1,59 @@
+.nests {
+    position: absolute;
+    height: 45rem;
+    left: 10%;
+    top: 15%;
+}
+
+
+.convertButton {
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 13px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    margin: 0 auto;
+    transform: translateY(0);
+    background: #FFB818;
+    border: 3px solid #FFFFFF;
+    z-index: 2;
+    color: #FFFFFF;
+    font-family: 'Circle';
+    font-size: 22px;
+}
+
+.eggs {
+    position: absolute;
+    height: 45rem;
+    left: 16.5%;
+    top: 11.5%;
+}
+
+.eggContainer {
+    display: flex;
+}
+
+.egg { 
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+.profit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 30%;
+    width: 200px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 3px solid #4472C4;
+    border-radius: 0.7rem;
+    font-family: 'Circle';
+}

@@ -1,0 +1,30 @@
+.background {
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+    gap: 3rem;
+    border-radius: 70px;
+}
+
+.menuButton {
+    width: 130px;
+    height: 45px;
+    background: #84ACF4;
+    opacity: 0.92;
+    border: none;
+    border-radius: 17px;
+    font-size: 16px;
+    font-family: 'Circle';
+    color: black;
+    z-index: 2;
+}

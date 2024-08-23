@@ -1,8 +1,7 @@
-import React from 'react';
 import styles from '../BirdNest/Nest.module.css'
 import nest from '../assets/nest.png'
 import shadow from './nestParts/nestShadow.png'
-import MenuBar from '../BirdsMenu/MenuBar';
+import BalanceBar from '../BalanceBar/BalanceBar';
 import progressBar from '../assets/progressBar.png'
 
 import eggsNest from './nestParts/eggsNest.png'
@@ -22,16 +21,25 @@ import part8 from './nestParts/part8.png'
 import part9 from './nestParts/part9.png'
 import eggsNestTop from './nestParts/eggsNestTop.png'
 import eggsNestShadow from './nestParts/eggsNestShadow.png'
+import NavBar from '../NavBar/NavBar';
+
+import mockBirdData, { BirdData } from '../mock';
+import { useParams } from 'react-router-dom';
+
 
 const Nest: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  const bird: BirdData = mockBirdData.find(b => b.id === parseInt(id!))!
+  const progress = bird.progress
   return (
     <div className={styles.nestContainer}>
-        <MenuBar/>
+        <BalanceBar/>
         <div>
+            {bird && <img src={`/src/assets/birds/${bird.bird}.png`} alt="Bird" className={styles.bird} />}
             <img src={nest} className={styles.nest} alt="Nest" />
             <img src={shadow} className={styles.shadow} alt="Shadow" />
             <img src={progressBar} className={styles.progress} alt="Progress Bar" />
-
+            <div className={styles.progressFill} style={{ width: `calc(${progress}% * 0.62)` }}></div>
             <img src={part} className={styles.part}/>
             <img src={part1} className={styles.part1}/>
             <img src={part2} className={styles.part2}/>
@@ -52,6 +60,7 @@ const Nest: React.FC = () => {
             <img src={eggsNestShadow} className={styles.eggsNestShadow}/>
             <button className={styles.claim}>Claim</button>
         </div>
+        <NavBar/>
     </div>
   );
 };
