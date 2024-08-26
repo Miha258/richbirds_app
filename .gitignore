@@ -1,0 +1,28 @@
+# Logs
+bird-game-app/logs
+bird-game-app/*.log
+bird-game-app/npm-debug.log*
+bird-game-app/yarn-debug.log*
+bird-game-app/yarn-error.log*
+bird-game-app/pnpm-debug.log*
+bird-game-app/lerna-debug.log*
+
+bird-game-app/node_modules
+bird-game-app/dist
+bird-game-app/dist-ssr
+bird-game-app/*.local
+
+
+
+bot/node_modules
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

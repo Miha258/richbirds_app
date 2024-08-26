@@ -6,7 +6,7 @@ const bot = new Telegraf(BOT_TOKEN);
 // Start command
 bot.start((ctx) => {
   ctx.reply('Welcome! Click a button', Markup.inlineKeyboard([
-    Markup.button.webApp('Open app', 'https://b18f-194-44-206-232.ngrok-free.app')
+    Markup.button.webApp('Open app', 'https://luckybirds.gold/')
   ]));
 });
 
