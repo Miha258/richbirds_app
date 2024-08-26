@@ -13,13 +13,13 @@ interface BirdNestProps {
 const BirdNest: React.FC<BirdNestProps> = ({ id, bird, progress }) => {
   const navigate = useNavigate();
   return (
-    <div className={styles.nestContainer} onClick={() => navigate(`/nest/${id}`)}>
+    <div className={styles.nestContainer} onClick={bird ? () => navigate(`/nest/${id}`) : () => { navigate(`/shop`) }}>
       <img src={nest} className={styles.nest} alt="Nest"/>
       {bird && <img src={`/src/assets/birds/${bird}.png`} alt="Bird" className={styles.bird} />}
       {bird && <img src={progressBar} className={styles.progress} alt="Progress Bar" /> }
       {bird && <div className={styles.progressFill} style={{ width: `${progress - 2}%`}}></div>}
     </div>
-  );
+  ); 
 };
 
 export default BirdNest;

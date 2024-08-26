@@ -6,20 +6,21 @@ import NavBar from '../NavBar/NavBar';
 import mockBirdData from '../mock';
 
 const BirdHouse: React.FC = () => {
+  const MAX_BIRDS = 9;
+  const filledBirdData = [...mockBirdData];
+  while (filledBirdData.length < MAX_BIRDS) {
+    filledBirdData.push({ id: filledBirdData.length + 1, bird: '', progress: 0 });
+  }
+
   const chunkArray = (array: any[], size: number) => {
     const result = [];
     for (let i = 0; i < array.length; i += size) {
       result.push(array.slice(i, i + size));
     }
-    if (result.length > 0) {
-      const lastRow = result[result.length - 1];
-      while (lastRow.length < size) {
-        lastRow.push({ id: `placeholder-${lastRow.length}`, bird: '', progress: 0 });
-      }
-    }
     return result;
   };
-  const nestRows = chunkArray(mockBirdData, 3);
+
+  const nestRows = chunkArray(filledBirdData, 3);
 
   return (
     <div>
@@ -31,7 +32,7 @@ const BirdHouse: React.FC = () => {
               <BirdNest
                 key={birdData.id}
                 id={birdData.id}
-                bird={birdData.bird as any}
+                bird={birdData.bird}
                 progress={birdData.progress}
               />
             ))}
