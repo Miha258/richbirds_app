@@ -13,6 +13,8 @@ model User {
   name        String?
   birds       Bird[]
   referrals   Referral[]
+  balance     Int
+  wallet      String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 }

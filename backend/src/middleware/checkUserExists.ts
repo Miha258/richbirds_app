@@ -9,6 +9,7 @@ export const checkUserExists = async (req: Request, res: Response, next: NextFun
     }
     next();
   } catch (error) {
+    //@ts-ignore
     res.status(500).json({ error: error.message });
   }
 };

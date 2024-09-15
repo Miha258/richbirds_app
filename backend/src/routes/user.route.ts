@@ -1,13 +1,12 @@
 import { Router } from 'express';
-import { createUser, getUsers, getUserById, updateUser, deleteUser } from '../controllers/user.controller';
-import { checkUserExists } from '../middleware/checkUserExists';
+import UserController from '../controllers/user.controller';
 
 const router = Router();
 
-router.post('/users', checkUserExists, createUser);
-router.get('/users', getUsers);
-router.get('/users/:id', getUserById);
-router.put('/users/:id', updateUser);
-router.delete('/users/:id', deleteUser);
+router.post('/users', UserController.createUser);
+router.get('/users', UserController.getUsers);
+router.get('/users/:id', UserController.getUserById);
+router.put('/users/:id', UserController.updateUser);
+router.delete('/users/:id', UserController.deleteUser);
 
 export default router;
